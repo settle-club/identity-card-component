@@ -31,7 +31,7 @@
 }
 
 .pan-card-emblem img {
-    width: 30px;
+    width: 25px;
 }
 
 .pan-card-body {
@@ -56,13 +56,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 5px;
     background-color: #C5E8FE;
 }
 
 .pan-card-user-icon img {
-    width: 40px;
+    width: 30px;
     opacity: 0.4;
 }

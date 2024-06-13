@@ -1,6 +1,6 @@
 import React from "react";
 import "./PanCard.css";
-import emblem from "./assets/National-Emblem.png";
+import emblem from "./assets/national-emblem.png";
 import user from "./assets/user.png";
 
 const PanCard = ({ name, panNumber }) => {
