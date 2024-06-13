@@ -4,7 +4,7 @@ import PanCard from "./PanCard";
 function App() {
   return (
     <div className="App">
-      <PanCard name="PRANAV SATYAWAN MAHADIK" panNumber="CXSPM6036P" />
+      <PanCard name="Jhon Doe" panNumber="CWACM5036P" />
     </div>
   );
 }
