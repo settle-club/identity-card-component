@@ -39,6 +39,18 @@ This is a React component for displaying a PAN card with name and PAN number.
 
     export default App;
     ```
+## Running the Project
+To run the project, follow these steps:
+
+1. Start the Development Server:
+
+    - Run the following command to start the development server:
+
+        ```bash
+        npm run dev
+        ```
+2. Open Your Browser:
+    - Open your browser and navigate to provided localhost URL to see the PAN card component in action.
 
 ## Component Description
 
