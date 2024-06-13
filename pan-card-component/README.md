@@ -18,30 +18,29 @@ To use the PAN Card Component in your existing React project, follow these steps
     - Navigate to the `pan-card-component` directory:
 
         ```bash
-        cd identity-card/pan-card-component
+        cd identity-card/pan-card-component/src
         ```
 
     - Copy `PanCard.jsx`, `PanCard.css`, and the `assets` directory to your project's `src/components` directory (or another appropriate location):
 
         ```bash
-        cp PanCard.jsx /path/to/your/project/src/components/
-        cp PanCard.css /path/to/your/project/src/components/
-        cp -r assets /path/to/your/project/src/components/
+        cp PanCard.jsx ../../path-to-your-project/src/components/
+        cp PanCard.css ../../path-to-your-project/src/components/
+        cp -r assets ../../path-to-your-project/src/components/
         ```
 
 ## Usage
 
 1. Import the Component:
-    - In your project, import the `PanCard` component and its CSS file in the desired file, for example, `App.jsx`:
+    - In your project, import the `PanCard` component in the desired file, for example, `App.jsx`:
 
         ```jsx
         import PanCard from "./components/PanCard"; // Adjust the path to where you placed the component files
-        import "./components/PanCard.css"; // Ensure the path is correct
         ```
 
 2. Use the Component:
     - Use the PanCard component in your App component or any other component, passing the required props:
-    
+
         ```jsx
         function App() {
             return (
