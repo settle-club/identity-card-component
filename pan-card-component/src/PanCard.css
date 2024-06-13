@@ -1,0 +1,68 @@
+.pan-card {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: 'Arial, sans-serif';
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #D8EFFF; /*#D8EFFF or #91C6F8*/
+}
+
+.pan-card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+    align-items: center;
+}
+
+.pan-card-title {
+    font-size: 13px;
+    color: #333;
+    text-align: left;
+}
+
+.ln-en {
+    letter-spacing: -0.90px;
+}
+
+.ln-hi {
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+.pan-card-emblem img {
+    width: 30px;
+}
+
+.pan-card-body {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pan-card-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.pan-card-number {
+    font-size: 18px;
+    color: #333;
+}
+
+.pan-card-user-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #C5E8FE;
+}
+
+.pan-card-user-icon img {
+    width: 40px;
+    opacity: 0.4;
+}
