@@ -3,42 +3,51 @@
 This is a React component for displaying a PAN card with name and PAN number.
 
 ## Installation
+To use the PAN Card Component in your existing React project, follow these steps:
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/settle-finance/identity-card.git
-    ```
+1. Download the Component:
 
-2. Navigate to the `pan-card-component` directory:
-    ```bash
-    cd identity-card/pan-card-component
-    ```
+    - Clone the repository:
+        ```bash
+        git clone https://github.com/settle-finance/identity-card.git
+        ```
 
-3. Install the dependencies:
-    ```bash
-    npm install
-    ```
+2. Copy the Component Files:
+
+    - Navigate to the `pan-card-component` directory:
+        ```bash
+        cd identity-card/pan-card-component
+        ```
+    - Copy `PanCard.jsx`, `PanCard.css`, and the `assets` directory to your project's `src/components` directory (or another appropriate location):
+        ```bash
+        cp PanCard.jsx /path/to/your/project/src/components/
+        cp PanCard.css /path/to/your/project/src/components/
+        cp -r assets /path/to/your/project/src/components/
+        ```
 
 ## Usage
 
-1. Import the `PanCard` component in your `App.jsx`:
-    ```jsx
-    import PanCard from "./PanCard";
-    import "./PanCard.css"; // Ensure you import the CSS for styling
-    ```
+1. Import the Component:
+    - In your project, import the `PanCard` component and its CSS file in the desired file, for example, `App.jsx`:
+        ```jsx
+        import PanCard from "./components/PanCard"; // Adjust the path to where you placed the component files
+        import "./components/PanCard.css"; // Ensure the path is correct
+        ```
 
-2. Use the `PanCard` component in your `App` component with sample data:
-    ```jsx
-    function App() {
-      return (
-        <div className="App">
-          <PanCard name="Jhon Doe" panNumber="CWACM5036P" />
-        </div>
-      );
-    }
+2. Use the Component:
+    - Use the PanCard component in your App component or any other component, passing the required props:
+        ```jsx
+        function App() {
+            return (
+                <div className="App">
+                    <PanCard name="Jhon Doe" panNumber="CWACM5036P" />
+                </div>
+            );
+        }
 
-    export default App;
-    ```
+        export default App;
+        ```
+        
 ## Running the Project
 To run the project, follow these steps:
 
