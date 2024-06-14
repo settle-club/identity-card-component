@@ -5,15 +5,16 @@ This is a React component for displaying a PAN card with name and PAN number.
 ## Installation
 
 1. Install the component:
+
     ```bash
-    npm install git+https://github.com/settle-finance/identity-card.git#card/pan-card-component
+    npm install git+https://github.com/settle-finance/identity-card.git
     ```
 
 ## Usage
 
 1. Import the `PanCard` component in your project:
     ```jsx
-    import PanCard from "Ids/src/cards/PanCard"
+    import PanCard from "identity-card/src/cards/PanCard"
     ```
 
 2. Use the `PanCard` component in your application:

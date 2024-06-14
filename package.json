@@ -1,5 +1,5 @@
 {
-  "name": "Ids",
+  "name": "identity-card",
   "version": "1.0.0",
   "description": "A React component for displaying Id cards",
   "main": "dist/index.js",
