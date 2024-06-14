@@ -1,10 +1,10 @@
 import "./App.css";
-import PanCard from "./cards/PanCard"
+import PanCard from "./src/cards/PanCard";
 
 function App() {
   return (
     <div className="App">
-      <PanCard name="Jhon Doe" panNumber="CWACM5036P" />
+      <PanCard name="Jhon Doe" number="CWACM5036P" />
     </div>
   );
 }

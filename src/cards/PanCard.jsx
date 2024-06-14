@@ -3,7 +3,7 @@ import "./PanCard.css";
 import emblem from "./assets/national-emblem.png";
 import user from "./assets/user.png";
 
-const PanCard = ({ name, panNumber }) => {
+const PanCard = ({ name, number }) => {
   return (
     <div className="pan-card">
       <div className="pan-card-header">
@@ -22,7 +22,7 @@ const PanCard = ({ name, panNumber }) => {
       <div className="pan-card-body">
         <div>
         <div className="pan-card-name">{name}</div>
-        <div className="pan-card-number">{panNumber}</div>
+        <div className="pan-card-number">{number}</div>
         </div>
         <div className="pan-card-user-icon">
           <img src={user} alt="user icon" />
