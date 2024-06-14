@@ -39,4 +39,4 @@ This is a React component for displaying a PAN card with name and PAN number.
 
 Here's an example output of the PAN card component:
 
-![PAN Card Example](./src/assets/pan-card-output.png)
+![PAN Card Example](./src/IDs/PanCard/assets/pan-card-output.png)

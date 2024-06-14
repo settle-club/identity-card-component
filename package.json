@@ -1,7 +1,7 @@
 {
-  "name": "pan-card-component",
+  "name": "Ids",
   "version": "1.0.0",
-  "description": "A React component for displaying PAN cards",
+  "description": "A React component for displaying Id cards",
   "main": "dist/index.js",
   "type": "module",
   "files": [
