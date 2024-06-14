@@ -1,8 +1,13 @@
 {
-  "name": "pan-component",
-  "private": true,
-  "version": "0.0.0",
+  "name": "pan-card-component",
+  "version": "1.0.0",
+  "description": "A React component for displaying PAN cards",
+  "main": "dist/index.js",
   "type": "module",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -22,5 +27,22 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "vite": "^5.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/settle-finance/identity-card.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "pan",
+    "card"
+  ],
+  "author": "Rithik Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/settle-finance/identity-card/issues"
+  },
+  "homepage": "https://github.com/settle-finance/identity-card#readme"
+
 }

@@ -3,74 +3,37 @@
 This is a React component for displaying a PAN card with name and PAN number.
 
 ## Installation
-To use the PAN Card Component in your existing React project, follow these steps:
 
-1. Download the Component:
-
-    - Clone the repository:
-
-        ```bash
-        git clone https://github.com/settle-finance/identity-card.git
-        ```
-
-2. Copy the Component Files:
-
-    - Navigate to the `pan-card-component` directory:
-
-        ```bash
-        cd identity-card/pan-card-component/src
-        ```
-
-    - Copy `PanCard.jsx`, `PanCard.css`, and the `assets` directory to your project's `src/components` directory (or another appropriate location):
-
-        ```bash
-        cp PanCard.jsx ../../path-to-your-project/src/components/
-        cp PanCard.css ../../path-to-your-project/src/components/
-        cp -r assets ../../path-to-your-project/src/components/
-        ```
+1. Install the component:
+    ```bash
+    npm install pan-card-component
+    ```
 
 ## Usage
 
-1. Import the Component:
-    - In your project, import the `PanCard` component in the desired file, for example, `App.jsx`:
+1. Import the `PanCard` component in your project:
+    ```jsx
+    import PanCard from "pan-card-component/dist/index.js";
+    import "pan-card-component/dist/style.css"; // Ensure you import the CSS for styling
+    ```
 
-        ```jsx
-        import PanCard from "./components/PanCard"; // Adjust the path to where you placed the component files
-        ```
+2. Use the `PanCard` component in your application:
+    ```jsx
+    function App() {
+      return (
+        <div className="App">
+          <PanCard name="John Doe" panNumber="CWACM5036P" />
+        </div>
+      );
+    }
 
-2. Use the Component:
-    - Use the PanCard component in your App component or any other component, passing the required props:
-
-        ```jsx
-        function App() {
-            return (
-                <div className="App">
-                    <PanCard name="Jhon Doe" panNumber="CWACM5036P" />
-                </div>
-            );
-        }
-
-        export default App;
-        ```
-
-## Running the Project
-To run the project, follow these steps:
-
-1. Start the Development Server:
-
-    - Run the following command to start the development server:
-
-        ```bash
-        npm run dev
-        ```
-2. Open Your Browser:
-    - Open your browser and navigate to provided localhost URL to see the PAN card component in action.
+    export default App;
+    ```
 
 ## Component Description
 
 - **PanCard.jsx**: The main component file that renders the PAN card.
 - **PanCard.css**: CSS file for styling the PAN card component.
-- **assets**: Directory containing images used in the component.
 
 ### Example Output
 
