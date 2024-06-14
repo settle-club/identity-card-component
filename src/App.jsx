@@ -1,5 +1,5 @@
 import "./App.css";
-import PanCard from "./PanCard";
+import PanCard from "./IDs/PanCard/PanCard"
 
 function App() {
   return (
