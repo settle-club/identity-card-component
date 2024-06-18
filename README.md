@@ -22,7 +22,7 @@ This is a React component for displaying a PAN card with name and PAN number.
     function App() {
       return (
         <div className="App">
-          <PanCard name="John Doe" panNumber="CWACM5036P" />
+          <PanCard name="John Doe" number="CWACM5036P" />
         </div>
       );
     }
