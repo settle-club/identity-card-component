@@ -1,6 +1,6 @@
-# PAN Card Component
+# Identity Card Component
 
-This is a React component for displaying a PAN card with name and PAN number.
+This is a React component for displaying a PAN card and Aadhaar card.
 
 ## Installation
 
@@ -32,13 +32,13 @@ This is a React component for displaying a PAN card with name and PAN number.
    export default App;
    ```
 
-### Example Output For Pancard
+### Example Output For Pan Card
 
 Here's an example output of the PAN card component:
 
 ![PAN Card Example](./src/assets/pan-card-output.png)
 
-## Usage For Aadhaarcard
+## Usage For Aadhaar Card
 
 1. Import the `AadhaarCard` component in your project:
 
@@ -69,7 +69,7 @@ Here's an example output of the PAN card component:
    export default App;
    ```
 
-### Example Output For Pancard
+### Example Output For Aadhaar Card
 
 Here's an example output of the PAN card component:
 
