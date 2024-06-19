@@ -1,0 +1,107 @@
+.pan-card {
+    width: 400px;
+    aspect-ratio: 1.6;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    font-family: 'Arial, sans-serif';
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #e2c3d6bd, #a6c6f8ba, #BCDDFD);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pan-card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+    align-items: center;
+}
+
+.left-head {
+    width: 50%;
+}
+
+.right-head {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.pan-card-title {
+    font-size: 13px;
+    color: #333;
+    text-align: left;
+}
+
+.ln-en {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.left-en {
+    letter-spacing: -0.6px;
+}
+
+.ln-hi {
+    margin-bottom: 4px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.left-title {
+    display: flex;
+    gap: 28px;
+}
+
+.pan-card-emblem {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.pan-card-emblem img {
+    width: 25px;
+}
+
+.right-title-en {
+    letter-spacing: 1.5px;
+}
+
+.pan-card-body {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pan-card-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.pan-card-number {
+    font-size: 20px;
+    color: #333;
+}
+
+.pan-card-user-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #DACAE5;
+    opacity: 0.7;
+}
+
+.pan-card-user-icon img {
+    width: 45px;
+    opacity: 0.4;
+}

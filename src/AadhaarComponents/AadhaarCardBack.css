@@ -1,0 +1,24 @@
+.body {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 52%;
+}
+
+.body .add {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+  margin: 0 10px;
+}
+
+.add p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 426px) {
+  .body .add {
+    font-size: 14px;
+  }
+}
