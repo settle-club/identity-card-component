@@ -6,37 +6,71 @@ This is a React component for displaying a PAN card with name and PAN number.
 
 1. Install the component:
 
-    ```bash
-    npm install git+https://github.com/settle-finance/identity-card.git
-    ```
+   ```bash
+   npm install git+https://github.com/settle-finance/identity-card.git
+   ```
 
-## Usage
+## Usage For Pancard
 
 1. Import the `PanCard` component in your project:
-    ```jsx
-    import { PanCard } from "identity-card"
-    ```
+
+   ```jsx
+   import { PanCard } from "identity-card";
+   ```
 
 2. Use the `PanCard` component in your application:
-    ```jsx
-    function App() {
-      return (
-        <div className="App">
-          <PanCard name="John Doe" number="CWACM5036P" />
-        </div>
-      );
-    }
 
-    export default App;
-    ```
+   ```jsx
+   function App() {
+     return (
+       <div className="App">
+         <PanCard name="John Doe" number="CWACM5036P" />
+       </div>
+     );
+   }
 
-## Component Description
+   export default App;
+   ```
 
-- **PanCard.jsx**: The main component file that renders the PAN card.
-- **PanCard.css**: CSS file for styling the PAN card component.
-
-### Example Output
+### Example Output For Pancard
 
 Here's an example output of the PAN card component:
 
 ![PAN Card Example](./src/assets/pan-card-output.png)
+
+## Usage For Aadhaarcard
+
+1. Import the `AadhaarCard` component in your project:
+
+   ```jsx
+   import { AadhaarCard } from "identity-card";
+   ```
+
+2. Use the `AadhaarCard` component in your application:
+
+   ```jsx
+   function App() {
+     return (
+       <div className="App">
+         <AadhaarCard
+           name="John Doe"
+           dob="09/07/2000"
+           gender="Male"
+           address="205 B Wing Niwas House, MIDC Road"
+           area="Andheri"
+           district="Mumbai"
+           state="Maharashtra"
+           pincode="400072"
+         />
+       </div>
+     );
+   }
+
+   export default App;
+   ```
+
+### Example Output For Pancard
+
+Here's an example output of the PAN card component:
+
+![PAN Card Example](./src/assets/aadhaar-demo.gif)
