@@ -1,3 +1,4 @@
+/* App.css */
 .AadhaarApp {
     display: flex;
     justify-content: center;
@@ -20,15 +21,15 @@
     transition: transform 0.6s;
   }
   
-  .card.flipped-right {
+  .Aadhaarcard.flipped-right {
     transform: rotateY(180deg);
   }
   
-  .card.flipped-left {
+  .Aadhaarcard.flipped-left {
     transform: rotateY(-180deg);
   }
   
-  .card > div {
+  .Aadhaarcard > div {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -38,11 +39,11 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  .card .front {
+  .Aadhaarcard .front {
     transform: rotateY(0deg);
   }
   
-  .card .back {
+  .Aadhaarcard .back {
     transform: rotateY(180deg);
   }
   
@@ -67,14 +68,14 @@
   
   /* Media Queries */
   @media only screen and (max-width: 426px) {
-    .card {
+    .Aadhaarcard {
       width: 400px;
       height: 250px;
     }
   }
   
   @media only screen and (max-width: 400px) {
-    .card {
+    .Aadhaarcard {
       width: 370px;
     }
   }
