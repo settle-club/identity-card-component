@@ -56,6 +56,8 @@ Here's an example output of the PAN card component:
            name="John Doe"
            dob="09/07/2000"
            gender="Male"
+           number="XXXX XXXX XXXX 5555"
+           image="https://images.unsplash.com/photo-1566753323558-f4e0952af115?q=80&w=1921&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
            address="205 B Wing Niwas House, MIDC Road"
            area="Andheri"
            district="Mumbai"
