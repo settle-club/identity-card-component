@@ -71,6 +71,6 @@ Here's an example output of the PAN card component:
 
 ### Example Output For Aadhaar Card
 
-Here's an example output of the PAN card component:
+Here's an example output of the Aadhaar card component:
 
-![PAN Card Example](./src/assets/aadhaar-demo.gif)
+![AADHAAR Card Example](./src/assets/aadhaar-demo.gif)
