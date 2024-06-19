@@ -5,6 +5,10 @@ import user from "../assets/user.png"
 import qr_code from "../assets/qr-code.png";
 
 const AadhaarCard_Front = ({ name, dob, gender, image, number }) => {
+  const handleImageError = (e) => {
+    e.target.src = user; // Fallback to default user image
+  };
+  
   return (
     <div className="aadhaar-card">
       <div className="header">
@@ -16,7 +20,7 @@ const AadhaarCard_Front = ({ name, dob, gender, image, number }) => {
       </div>
       <div className="body">
         <div className="photo">
-          <img src={image || user} alt="Profile" />
+          <img src={image || user} alt="Profile" onError={handleImageError}/>
         </div>
         <div className="info">
           <div className="sub-info">
