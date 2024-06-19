@@ -1,5 +1,6 @@
 .pan-card {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     aspect-ratio: 1.6;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -105,3 +106,31 @@
     width: 45px;
     opacity: 0.4;
 }
+
+/* Media Queries */
+@media only screen and (max-width: 426px) {
+    .pan-card{
+        width: 90%;
+    max-width: 400px;
+    }
+
+    .ln-hi {
+        margin-bottom: 4px;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    .ln-en {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .left-title {
+        gap: 16px;
+    }
+
+    .right-title-en {
+        letter-spacing: 0.5px;
+    }
+  }
