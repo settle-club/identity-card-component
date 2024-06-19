@@ -7,16 +7,16 @@ const PanCard = ({ name, number }) => {
   return (
     <div className="pan-card">
       <div className="pan-card-header">
-        <div>
-          <div className="pan-card-title ln-hi">आयकर विभाग</div>
-          <div className="pan-card-title ln-en">INCOME TAX DEPARTMENT</div>
+        <div className="left-head">
+          <div className="pan-card-title left-title ln-hi"><span>आयकर</span> <span>विभाग</span></div>
+          <div className="pan-card-title ln-en left-en">INCOME TAX DEPARTMENT</div>
         </div>
         <div className="pan-card-emblem">
           <img src={emblem} alt="National Emblem of India" />
         </div>
-        <div>
+        <div className="right-head">
           <div className="pan-card-title ln-hi">भारत सरकार</div>
-          <div className="pan-card-title ln-en">GOVT. OF INDIA</div>
+          <div className="pan-card-title right-title-en ln-en">GOVT. OF INDIA</div>
         </div>
       </div>
       <div className="pan-card-body">
