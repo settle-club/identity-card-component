@@ -1,8 +1,8 @@
 import React from "react";
-import "./AadhaarCard_Back.css";
+import "./AadhaarCardBack.css";
 import aadhaarHeader from "../assets/aadhaar-header.png";
 
-const AadhaarCard_Back = ({ address, area, district, state, pincode }) => {
+const AadhaarCardBack = ({ address, area, district, state, pincode }) => {
   return (
     <div className="aadhaar-card">
       <div className="header">
@@ -28,4 +28,4 @@ const AadhaarCard_Back = ({ address, area, district, state, pincode }) => {
   );
 };
 
-export default AadhaarCard_Back;
+export default AadhaarCardBack;

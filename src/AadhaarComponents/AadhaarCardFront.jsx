@@ -1,10 +1,10 @@
 import React from "react";
-import "./AadhaarCard_Front.css";
+import "./AadhaarCardFront.css";
 import aadhaarHeader from "../assets/aadhaar-header.png";
 import user from "../assets/user.png"
 import qr_code from "../assets/qr-code.png";
 
-const AadhaarCard_Front = ({ name, dob, gender, image, number }) => {
+const AadhaarCardFront = ({ name, dob, gender, image, number }) => {
   const handleImageError = (e) => {
     e.target.src = user; // Fallback to default user image
   };
@@ -51,4 +51,4 @@ const AadhaarCard_Front = ({ name, dob, gender, image, number }) => {
   );
 };
 
-export default AadhaarCard_Front;
+export default AadhaarCardFront;
