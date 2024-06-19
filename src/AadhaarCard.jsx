@@ -39,7 +39,6 @@ function AadhaarCard({name, dob, gender, image, number, address, area, district,
         <div className={`circle ${!isFlipped ? 'active' : ''}`}></div>
         <div className={`circle ${isFlipped ? 'active' : ''}`}></div>
       </div>
-      {/* <AadhaarCard_Front name="Rithik Jain" dob="09/07/2024" gender="Male" /> */}
     </div>
   );
 }

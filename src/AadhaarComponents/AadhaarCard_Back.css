@@ -1,24 +1,3 @@
-/* .aadhaar-card {
-  max-width: 500px;
-  height: 285px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-family: "Arial", sans-serif;
-  margin: auto;
-} */
-
-/* .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-} */
-
-/* .aadhaar-img-header {
-  width: 100%;
-} */
-
 .body {
   display: flex;
   align-items: center;
@@ -37,20 +16,6 @@
 .add p {
   margin: 0;
 }
-
-/* .footer {
-  border-top: 1px solid #ccc;
-} */
-
-/* .footer h3 {
-  text-align: center;
-  padding: 10px;
-  margin: 0;
-} */
-
-/* .footer-red {
-  color: red;
-} */
 
 @media only screen and (max-width: 426px) {
   .body .add {
