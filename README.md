@@ -7,7 +7,7 @@ This is a React component for displaying a PAN card and Aadhaar card.
 1. Install the component:
 
    ```bash
-   npm install git+https://github.com/settle-finance/identity-card.git
+   npm install git+https://github.com/settle-finance/identity-card-component.git
    ```
 
 ## Usage For Pancard
