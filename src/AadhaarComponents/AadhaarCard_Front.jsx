@@ -4,7 +4,7 @@ import aadhaarHeader from "../assets/aadhaar-header.png";
 import user from "../assets/user.png"
 import qr_code from "../assets/qr-code.png";
 
-const AadhaarCard_Front = ({ name, dob, gender }) => {
+const AadhaarCard_Front = ({ name, dob, gender, image, number }) => {
   return (
     <div className="aadhaar-card">
       <div className="header">
@@ -16,7 +16,7 @@ const AadhaarCard_Front = ({ name, dob, gender }) => {
       </div>
       <div className="body">
         <div className="photo">
-          <img src={user} alt="Profile" />
+          <img src={image || user} alt="Profile" />
         </div>
         <div className="info">
           <div className="sub-info">
@@ -36,7 +36,7 @@ const AadhaarCard_Front = ({ name, dob, gender }) => {
             </div>
           </div>
           <div className="aadhaar-number">
-            <h2>4444 3333 6666 8888</h2>
+            <h2>{number}</h2>
           </div>
         </div>
       </div>
