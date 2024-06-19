@@ -1,4 +1,4 @@
-.App {
+.AadhaarApp {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
     cursor: pointer;
   }
   
-  .card {
+  .Aadhaarcard {
     width: 98vw;
     max-width: 500px;
     height: 286px;

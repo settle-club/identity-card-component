@@ -3,7 +3,7 @@ import AadhaarCard_Front from './AadhaarComponents/AadhaarCard_Front';
 import AadhaarCard_Back from './AadhaarComponents/AadhaarCard_Back';
 import './AadhaarCard.css';
 
-function AadhaarCard() {
+function AadhaarCard({name, dob, gender, address, area, district, state, pincode}) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [flipDirection, setFlipDirection] = useState('right');
 
@@ -21,17 +21,17 @@ function AadhaarCard() {
   };
 
   return (
-    <div className="App">
+    <div className="AadhaarApp">
       <div 
         className={`card-container`} 
         onClick={handleFlip}
       >
-        <div className={`card ${isFlipped ? `flipped-${flipDirection}` : ''}`}>
+        <div className={`Aadhaarcard ${isFlipped ? `flipped-${flipDirection}` : ''}`}>
           <div className="front">
-            <AadhaarCard_Front name="Rithik Jain" dob="09/07/2024" gender="Male" />
+            <AadhaarCard_Front name={name} dob={dob} gender={gender} />
           </div>
           <div className="back">
-            <AadhaarCard_Back address="Apt. 772 304 Stephan Mountain, Cyriltown" area="Sakinaka" district="Mumbai" state="Maharashtra" pincode="400072" />
+            <AadhaarCard_Back address={address} area={area} district={district} state={state} pincode={pincode} />
           </div>
         </div>
       </div>
