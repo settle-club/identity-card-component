@@ -129,4 +129,8 @@
     .left-title {
         gap: 16px;
     }
+
+    .right-title-en {
+        letter-spacing: 0.5px;
+    }
   }
