@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import AadhaarCard_Front from './AadhaarComponents/AadhaarCard_Front';
 import AadhaarCard_Back from './AadhaarComponents/AadhaarCard_Back';
-import './App.css';
+import './AadhaarCard.css';
 
 function AadhaarCard() {
   const [isFlipped, setIsFlipped] = useState(false);
