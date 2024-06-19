@@ -14,7 +14,7 @@ This is a React component for displaying a PAN card with name and PAN number.
 
 1. Import the `PanCard` component in your project:
     ```jsx
-    import {PanCard} from "identity-card"
+    import { PanCard } from "identity-card"
     ```
 
 2. Use the `PanCard` component in your application:

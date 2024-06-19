@@ -1,0 +1,139 @@
+.aadhaar-card {
+  max-width: 500px;
+  height: 285px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  margin: auto;
+  /* background-color: #f9f9f9; */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.aadhaar-img-header {
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 25px;
+}
+
+.info .sub-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo {
+  background-color: #eee;
+  border-radius: 10px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.details p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.qr-code img {
+  width: 100px;
+  height: 100px;
+}
+
+.aadhaar-number h2 {
+  margin: 8px 0;
+}
+
+.footer {
+  border-top: 1px solid #ccc;
+}
+
+.footer h3 {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.footer-red {
+  color: red;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 426px) {
+  .photo {
+    height: 80px;
+    width: 80px;
+  }
+
+  .aadhaar-card {
+    height: 250px !important;
+  }
+
+  .photo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .qr-code img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .aadhaar-number h2 {
+    font-size: 22px;
+  }
+
+  .footer h3 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .photo {
+    height: 70px;
+    width: 70px;
+  }
+
+  .photo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .qr-code img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .aadhaar-number h2 {
+    font-size: 20px;
+  }
+
+  .footer h3 {
+    font-size: 18px;
+  }
+}
