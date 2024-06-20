@@ -3,7 +3,7 @@ import AadhaarCardFront from './AadhaarComponents/AadhaarCardFront';
 import AadhaarCardBack from './AadhaarComponents/AadhaarCardBack';
 import './AadhaarCard.css';
 
-function AadhaarCard({name, dob, gender, image, number, address, area, district, state, pincode}) {
+function AadhaarCard({name, dob, gender, image, number, address, area, district, state, pincode, color='blue'}) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [flipDirection, setFlipDirection] = useState('right');
 
@@ -33,8 +33,8 @@ function AadhaarCard({name, dob, gender, image, number, address, area, district,
         </div>
       </div>
       <div className="pagination">
-        <div className={`circle ${!isFlipped ? 'active' : ''}`}></div>
-        <div className={`circle ${isFlipped ? 'active' : ''}`}></div>
+        <div className={`circle ${!isFlipped ? 'active' : ''}`} style={{backgroundColor: !isFlipped ? color : '#ccc'}}></div>
+        <div className={`circle ${isFlipped ? 'active' : ''}`} style={{backgroundColor: isFlipped ? color : '#ccc'}}></div>
       </div>
     </div>
   );

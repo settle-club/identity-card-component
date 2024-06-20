@@ -63,6 +63,7 @@ Here's an example output of the PAN card component:
            district="Mumbai"
            state="Maharashtra"
            pincode="400072"
+           color='crimson' //optional
          />
        </div>
      );
@@ -70,6 +71,7 @@ Here's an example output of the PAN card component:
 
    export default App;
    ```
+3. To change the color of pagination circles use `color` prop. By default it is set to `blue` color.
 
 ### Example Output For Aadhaar Card
 

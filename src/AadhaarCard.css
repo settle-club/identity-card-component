@@ -62,7 +62,7 @@
   }
   
   .circle.active {
-    background-color: blue;
+    background-color: inherit;
   }
   
   /* Media Queries */
