@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useSwipeable } from "react-swipeable";
 import AadhaarCardFront from './AadhaarComponents/AadhaarCardFront';
 import AadhaarCardBack from './AadhaarComponents/AadhaarCardBack';
 import './AadhaarCard.css';
