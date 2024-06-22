@@ -8,15 +8,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     libraryTarget: 'umd',
-    // globalObject: 'globalThis',
+    globalObject: 'globalThis', // Ensure compatibility with both client and server
   },
-  plugins: [
-    new webpack.DefinePlugin({
-      'self': 'globalThis',
-      'window': 'globalThis',
-      'document': 'globalThis.document'
-    })
-  ],
   module: {
     rules: [
       {
@@ -56,13 +49,18 @@ module.exports = {
       root: 'React',
     },
     'react-dom': {
-    commonjs: 'react-dom',
-    commonjs2: 'react-dom',
-    amd: 'react-dom',
-    root: 'ReactDOM',
-  },
+      commonjs: 'react-dom',
+      commonjs2: 'react-dom',
+      amd: 'react-dom',
+      root: 'ReactDOM',
+    },
   },
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production'),
+    }),
+  ],
 };
