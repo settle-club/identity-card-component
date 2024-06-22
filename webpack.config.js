@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'production',
@@ -7,8 +8,15 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     libraryTarget: 'umd',
-    globalObject: 'globalThis',
+    // globalObject: 'globalThis',
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      'self': 'globalThis',
+      'window': 'globalThis',
+      'document': 'globalThis.document'
+    })
+  ],
   module: {
     rules: [
       {
@@ -47,6 +55,12 @@ module.exports = {
       amd: 'react',
       root: 'React',
     },
+    'react-dom': {
+    commonjs: 'react-dom',
+    commonjs2: 'react-dom',
+    amd: 'react-dom',
+    root: 'ReactDOM',
+  },
   },
   resolve: {
     extensions: ['.js', '.jsx'],
