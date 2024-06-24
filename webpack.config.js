@@ -30,16 +30,17 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'assets/',
-              publicPath: 'identity-card/dist/assets',
-            },
-          },
-        ],
+        // use: [
+        //   {
+        //     loader: 'file-loader',
+        //     options: {
+        //       name: '[name].[ext]',
+        //       outputPath: 'assets/',
+        //       publicPath: 'identity-card/dist/assets',
+        //     },
+        //   },
+        // ],
+        type: "asset/inline",
       },
     ],
   },
