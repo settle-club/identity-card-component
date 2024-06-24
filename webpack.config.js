@@ -36,7 +36,7 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: 'assets/',
-              publicPath: 'node_modules/identity-card/dist/assets/',
+              publicPath: '../assets',
             },
           },
         ],
