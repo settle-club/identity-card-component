@@ -11,6 +11,7 @@ module.exports = {
     filename: 'index.js',
     libraryTarget: 'umd',
     globalObject: 'globalThis', // Ensure compatibility with both client and server
+    publicPath: '/node_modules/identity-card/dist/',
   },
   module: {
     rules: [
