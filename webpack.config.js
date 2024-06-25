@@ -26,20 +26,10 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader'], /*'style-loader', */
+        use: [MiniCssExtractPlugin.loader, 'css-loader'], /*'style-loader', */
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
-        // use: [
-        //   {
-        //     loader: 'file-loader',
-        //     options: {
-        //       name: '[name].[ext]',
-        //       outputPath: 'assets/',
-        //       publicPath: 'identity-card/dist/assets',
-        //     },
-        //   },
-        // ],
         type: "asset/inline",
       },
     ],
