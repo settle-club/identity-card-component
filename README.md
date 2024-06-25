@@ -16,6 +16,7 @@ This is a React component for displaying a PAN card and Aadhaar card.
 
    ```jsx
    import { PanCard } from "identity-card";
+   import "identity-card/dist/styles.css"
    ```
 
 2. Use the `PanCard` component in your application:
@@ -44,6 +45,7 @@ Here's an example output of the PAN card component:
 
    ```jsx
    import { AadhaarCard } from "identity-card";
+   import "identity-card/dist/styles.css"
    ```
 
 2. Use the `AadhaarCard` component in your application:
