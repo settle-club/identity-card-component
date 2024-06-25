@@ -1,4 +1,7 @@
 const path = require('path');
+const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 
 module.exports = {
   mode: 'production',
@@ -7,6 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     libraryTarget: 'umd',
+    globalObject: 'globalThis', // Ensure compatibility with both client and server
   },
   module: {
     rules: [
@@ -22,20 +26,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'], /*'style-loader', */
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'assets/',
-              publicPath: 'node_modules/identity-card/dist/assets/',
-            },
-          },
-        ],
+        type: "asset/inline",
       },
     ],
   },
@@ -46,8 +41,22 @@ module.exports = {
       amd: 'react',
       root: 'React',
     },
+    'react-dom': {
+      commonjs: 'react-dom',
+      commonjs2: 'react-dom',
+      amd: 'react-dom',
+      root: 'ReactDOM',
+    },
   },
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'styles.css',
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production'),
+    }),
+  ],
 };

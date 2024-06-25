@@ -1,0 +1,384 @@
+.pan-card {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1.6;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    font-family: 'Arial, sans-serif';
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #e2c3d6bd, #a6c6f8ba, #BCDDFD);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pan-card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+    align-items: center;
+}
+
+.left-head {
+    width: 50%;
+}
+
+.right-head {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.pan-card-title {
+    font-size: 13px;
+    color: #333;
+    text-align: left;
+}
+
+.ln-en {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.left-en {
+    letter-spacing: -0.6px;
+}
+
+.ln-hi {
+    margin-bottom: 4px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.left-title {
+    display: flex;
+    gap: 28px;
+}
+
+.pan-card-emblem {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.pan-card-emblem img {
+    width: 25px;
+}
+
+.right-title-en {
+    letter-spacing: 1.5px;
+}
+
+.pan-card-body {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pan-card-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.pan-card-number {
+    font-size: 20px;
+    color: #333;
+}
+
+.pan-card-user-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #DACAE5;
+    opacity: 0.7;
+}
+
+.pan-card-user-icon img {
+    width: 45px;
+    opacity: 0.4;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 426px) {
+    .pan-card{
+        width: 90%;
+    max-width: 400px;
+    }
+
+    .ln-hi {
+        margin-bottom: 4px;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    .ln-en {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .left-title {
+        gap: 16px;
+    }
+
+    .right-title-en {
+        letter-spacing: 0.5px;
+    }
+  }
+.aadhaar-card {
+  max-width: 500px;
+  height: 285px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.aadhaar-img-header {
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 25px;
+}
+
+.info .sub-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo {
+  
+  border-radius: 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.details p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.qr-code img {
+  width: 100px;
+  height: 100px;
+}
+
+.aadhaar-number h2 {
+  margin: 8px 0;
+}
+
+.footer {
+  border-top: 1px solid #ccc;
+}
+
+.footer h3 {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.footer-red {
+  color: red;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 426px) {
+  .photo {
+    height: 70px;
+    width: 70px;
+  }
+
+  .aadhaar-card {
+    height: 250px !important;
+  }
+
+  .photo img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .qr-code img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .aadhaar-number h2 {
+    font-size: 22px;
+  }
+
+  .footer h3 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* .photo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .photo img {
+    width: 50px;
+    height: 50px;
+  } */
+
+  .qr-code img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .aadhaar-number h2 {
+    font-size: 20px;
+  }
+
+  .footer h3 {
+    font-size: 18px;
+  }
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 52%;
+}
+
+.body .add {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+  margin: 0 10px;
+}
+
+.add p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 426px) {
+  .body .add {
+    font-size: 14px;
+  }
+}
+
+.AadhaarApp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+  }
+  
+  .card-container {
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  
+  .Aadhaarcard {
+    width: 98vw;
+    max-width: 500px;
+    height: 286px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .Aadhaarcard.flipped-right {
+    transform: rotateY(180deg);
+  }
+  
+  .Aadhaarcard.flipped-left {
+    transform: rotateY(-180deg);
+  }
+  
+  .Aadhaarcard > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Aadhaarcard .front {
+    transform: rotateY(0deg);
+  }
+  
+  .Aadhaarcard .back {
+    transform: rotateY(180deg);
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .circle.active {
+    background-color: inherit;
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 426px) {
+    .Aadhaarcard {
+      width: 400px;
+      height: 250px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .Aadhaarcard {
+      width: 370px;
+    }
+  }
+  
