@@ -14,9 +14,11 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
+  "peerDependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "dependencies": {
     "react-swipeable": "^7.0.1"
   },
   "devDependencies": {
